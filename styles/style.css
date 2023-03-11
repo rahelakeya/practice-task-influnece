@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+/* header & Navigation Style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
