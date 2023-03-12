@@ -1,12 +1,25 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&family=Poppins:wght@500;600&family=Work+Sans&display=swap');
+
 * {
     margin: 0;
+}
+
+/* common style */
+body {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
 }
 
 /* header & Navigation Style */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px 200px;
+    padding: 0 120px;
+    margin-top: 87px;
 }
 
 .nav-title {
@@ -27,4 +40,67 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #3A3A3A;
+}
+
+/* main section */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* journey styles */
+.journey {
+    display: flex;
+    margin-top: 200px;
+    gap: 130px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+}
+
+.section-description {
+    color: #3A3A3A;
+    font-size: 16px;
+    margin-top: 16px;
+
+}
+
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 16px;
+    background: #E02C6D;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 45%;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 24px;
+}
+
+.camera {
+    background-image: url("../images/Circle design.svg");
+    margin-top: -80px;
+    width: 475px;
+    height: 475px;
+}
+
+.camera img {
+    width: 440px;
+    height: 414px;
+    padding: 30px 30px 2px 30px;
+}
+
+/* logo styles */
+.logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 10px;
+    width: 1110px;
+    height: 110px;
+    margin-top: 170px;
 }
