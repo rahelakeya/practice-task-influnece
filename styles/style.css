@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
-    background-color: #f5f0f0;
+    background-color: #eee5e5;
     ;
 
 }
@@ -78,7 +78,7 @@ main {
     background: #E02C6D;
     font-weight: 700;
     font-size: 16px;
-    border-radius: 45%;
+    border-radius: 25px;
     border: none;
     color: #FFFFFF;
     padding: 10px 24px;
@@ -104,7 +104,7 @@ main {
     grid-column-gap: 10px;
     width: 1110px;
     height: 110px;
-    margin-top: 170px;
+    padding: 30px;
 
 }
 
@@ -130,9 +130,10 @@ main {
 
 .item {
     width: 329px;
-    /* height: 476px; */
     background-color: #FFFFFF;
     padding: 15px 15px 15px;
+    border-radius: 5%;
+    Offset: 0px, 0px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -236,4 +237,31 @@ footer {
 
 .footer-icons {
     margin-top: 17px;
+}
+
+/* -------------
+    Media Query
+ --------------*/
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+    .journey {
+        flex-direction: column-reverse;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        column-gap: 2px;
+    }
+
+    .popular-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured {
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
 }
